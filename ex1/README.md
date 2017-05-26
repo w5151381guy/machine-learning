@@ -1,10 +1,10 @@
-# 摘要
+## 摘要
 
 1. 機器學習概述<br>
 2. 一元線性回歸<br>
 3. 梯度下降法<br>
 ---
-# 機器學習應用
+## 機器學習應用
 
 1. 反垃圾郵件（貝葉斯算法）<br>
 2. 數據挖掘：Web click data/medical records/biology/engineering<br>
@@ -12,7 +12,7 @@
 4. 自治編程：Amazon、Netflix產品推薦<br>
 5. 了解人腦學習<br>
 ---
-# 機器學習演算法
+## 機器學習演算法
 
 ### 監督式學習([Supervised learning](https://zh.wikipedia.org/wiki/%E7%9B%A3%E7%9D%A3%E5%BC%8F%E5%AD%B8%E7%BF%92))
 
@@ -29,7 +29,7 @@
   * 雞尾酒會問題：音頻分離<br>
   * Reinforcement learning、recommender systems<br>
 ---
-# 一元線性回歸（Linear Regression with single variable）——模型表示（model representation）
+## 一元線性回歸（Linear Regression with single variable）——模型表示（model representation）
 
 1. 監督式學習過程：訓練數據->學習算法->提出假設函數h<br>
 2. h(x)=θ0+θ1*x，選擇合適的參數來吻合訓練數據<br>
@@ -38,7 +38,7 @@
 5. 等值線圖（[contour plot](https://zh.wikipedia.org/wiki/%E7%AD%89%E9%AB%98%E7%B7%9A)）：若不做簡化，則價值函數就從平面二次函數變為三維中的曲面（MATLAB實現），就可以在自變量平面上畫等值線<br>
 ---
 
-# 梯度下降法（[Gradient descent](https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95)）
+## 梯度下降法（[Gradient descent](https://zh.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95)）
 
 1. 這是個局部方法，因為它依賴的是當前這一點的梯度方向和大小，順著梯度的方向邁步子（就像下山一樣），步子大小由梯度大小決定<br>
 2. 需要計算偏導數，並指定α<br>
