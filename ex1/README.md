@@ -17,19 +17,19 @@
 ### 監督式學習([Supervised learning](https://zh.wikipedia.org/wiki/%E7%9B%A3%E7%9D%A3%E5%BC%8F%E5%AD%B8%E7%BF%92))
 
 1. 會明確給出答案的對錯<br>
-  * 房產價格預測，由之前的趨勢預測，這屬於回歸問題（regresion problem）<br>
-  * 乳腺癌，腫瘤大小/年齡（或者引入更多變量）與是否惡性的聯繫，這屬於分類問題（classification）<br>
+- 房產價格預測，由之前的趨勢預測，這屬於回歸問題（regresion problem）<br>
+- 乳腺癌，腫瘤大小/年齡（或者引入更多變量）與是否惡性的聯繫，這屬於分類問題（classification）<br>
 
 ### 非監督式學習([Unsupervised learning](https://zh.wikipedia.org/wiki/%E9%9D%9E%E7%9B%A3%E7%9D%A3%E5%BC%8F%E5%AD%B8%E7%BF%92))
 
 1. 不會明確給出答案的對錯<br>
-  * 乳腺癌的例子裡只給出數據點而不告訴你是否惡性，將數據范圍分為兩個集群<br>
-  * Google新聞<br>
-  * 組織計算集群、社交網絡分析、市場劃分、天文數據分析<br>
-  * 雞尾酒會問題：音頻分離<br>
-  * Reinforcement learning、recommender systems<br>
+- 乳腺癌的例子裡只給出數據點而不告訴你是否惡性，將數據范圍分為兩個集群<br>
+- Google新聞<br>
+- 組織計算集群、社交網絡分析、市場劃分、天文數據分析<br>
+- 雞尾酒會問題：音頻分離<br>
+- Reinforcement learning、recommender systems<br>
 ---
-## 一元線性回歸（Linear Regression with single variable）——模型表示（model representation）
+## 一元線性回歸（Linear Regression with single variable）
 
 1. 監督式學習過程：訓練數據->學習算法->提出假設函數h<br>
 2. h(x)=θ0+θ1*x，選擇合適的參數來吻合訓練數據<br>
