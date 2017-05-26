@@ -47,15 +47,19 @@ J = sum((J1.^2)(R==1))/2;
 J += lambda * sum(sum(Theta.^2)) / 2;
 J += lambda * sum(sum(X.^2)) / 2;
 
+for i=1:num_movies,
+    rate = find(R(i,:)==1);
+    X_grad(i,:) = (X(i,:)*Theta(rate,:)'-Y(i,rate))*Theta(rate,:);
+    % regularized
+    X_grad(i,:) += lambda*X(i,:); 
+end
 
-
-
-
-
-
-
-
-
+for i=1:num_users,
+    rate = find(R(:,i)==1)';
+    Theta_grad(i,:) = (X(rate,:)*Theta(i,:)'-Y(rate,i))'*X(rate,:);
+    % regularized
+    Theta_grad(i,:) += lambda*Theta(i,:);
+end
 % =============================================================
 
 grad = [X_grad(:); Theta_grad(:)];
